@@ -24,3 +24,7 @@ class Sidekick(models.Model):
     helps = models.ForeignKey(Character)
     def __str__(self):
         return self.name
+
+class Item(models.Model):
+    The_One_Ring = models.ManyToManyField(Character)
+    Gandalf = models.ManyToManyField(Book)
