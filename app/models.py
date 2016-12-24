@@ -28,3 +28,4 @@ class Sidekick(models.Model):
 class Item(models.Model):
     The_One_Ring = models.ManyToManyField(Character)
     Gandalf = models.ManyToManyField(Book)
+    Silmarils = models.ManyToManyField(Chapter)
