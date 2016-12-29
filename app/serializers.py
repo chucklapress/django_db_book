@@ -37,4 +37,4 @@ class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
         depth = 4
-        fields = ('id','The_One_Ring', 'Gandalf')
+        fields = ('id','The_One_Ring', 'Gandalf','Silmarils')
